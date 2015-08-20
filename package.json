@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack --config webpack.config.js",
+    "phrontend": "webpack --config phrontend-webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.16.0",
+    "cssnext": "^1.8.3",
     "file-loader": "^0.8.4",
+    "phrontend-webpack": "0.0.2",
+    "postcss-loader": "^0.6.0",
+    "postcss-mixins": "^0.4.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0",
     "webpack": "^1.11.0"
   }
 }
