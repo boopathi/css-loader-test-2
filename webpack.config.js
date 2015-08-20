@@ -6,7 +6,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   postcss: [
-    require('cssnext')(),
+    require('cssnext')({
+      url: false
+    }),
     require('postcss-simple-vars'),
     require('postcss-mixins'),
     require('postcss-nested')
